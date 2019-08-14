@@ -9,7 +9,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require -vv --prefer-dist airani/yii2-telegram-log
+php composer.phar require -vv --prefer-dist SSvishnevsky/yii2-telegram-log
 ```
 
 or add below line to the require section of composer.json file and then run `php composer.phar update -vv --prefer-dist --profile`
@@ -29,6 +29,7 @@ or add below line to the require section of composer.json file and then run `php
             'levels' => ['error'],
             'botToken' => '123456:abcde', // bot token secret key
             'chatId' => '123456', // chat id or channel username with @ like 12345 or @channel
+            'baseUrl' => 'yore api propxy adress' //nillable
         ],
     ],
 ],
@@ -38,3 +39,6 @@ or add below line to the require section of composer.json file and then run `php
 
 ### 1.0 ###
 * First version
+
+### 1.1 ###
+* Add configurable baseUrl

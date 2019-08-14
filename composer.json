@@ -1,18 +1,22 @@
 {
-    "name": "airani/yii2-telegram-log",
+    "name": "SSvishnevsky/yii2-telegram-log",
     "description": "Yii 2.0 telegram log target, send logs to the telegram chats or channels",
     "keywords": ["yii2", "telegram", "bot", "log"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/airani/yii2-telegram-log/issues",
-        "source": "https://github.com/airani/yii2-telegram-log",
+        "issues": "https://github.com/SSvishnevsky/yii2-telegram-log/issues",
+        "source": "https://github.com/SSvishnevsky/yii2-telegram-log",
         "irc": "irc://irc.freenode.net/yii"
     },
     "authors": [
         {
             "name": "Ali Irani",
             "email": "ali@irani.im"
+        },
+        {
+            "name": "Stanislav Vishnevsky",
+            "stanislav.skif@gmail.com"
         }
     ],
     "require": {
@@ -21,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "airani\\log\\": ""
+            "SSvishnevsky\\log\\": ""
         }
     }
 }

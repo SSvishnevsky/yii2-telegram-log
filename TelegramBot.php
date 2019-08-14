@@ -12,14 +12,18 @@ use yii\httpclient\Client;
  */
 class TelegramBot extends Component
 {
-    const API_BASE_URL = 'https://api.telegram.org/bot';
-
     /**
      * Bot api token secret key
      * @var string
      */
     public $token;
-    
+    /**
+     * Bot api adress api
+     * @var string
+     */
+    public $baseUrl = 'https://api.telegram.org/bot';
+
+
     private $_client;
 
     /**
@@ -42,7 +46,7 @@ class TelegramBot extends Component
             return $this->_client;
         }
 
-        return new Client(['baseUrl' => self::API_BASE_URL . $this->token]);
+        return new Client(['baseUrl' => $this->baseUrl . $this->token]);
     }
 
     /**

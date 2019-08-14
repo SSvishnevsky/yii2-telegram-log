@@ -37,6 +37,12 @@ class TelegramTarget extends Target
      * @var int|string
      */
     public $chatId;
+    /**
+     * Destination api adress
+     * @var string
+     */
+
+    public $baseUrl;
 
     /**
      * Check required properties
@@ -57,7 +63,13 @@ class TelegramTarget extends Target
      */
     public function export()
     {
-        $bot = new TelegramBot(['token' => $this->botToken]);
+        $config = ['token' => $this->botToken];
+
+        if(!empty($this->baseUrl)){
+            $config['baseUrl'] = $this->baseUrl;
+        }
+        
+        $bot = new TelegramBot($config);
 
         $messages = array_map([$this, 'formatMessage'], $this->messages);
 
