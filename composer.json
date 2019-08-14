@@ -4,12 +4,6 @@
     "keywords": ["yii2", "telegram", "bot", "log"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
-    "repositories": [
-      {
-      "type": "vcs",
-      "url": "https://github.com/SSvishnevsky/yii2-telegram-log.git"
-      }
-    ],
     "minimum-stability": "dev",
     "support": {
         "issues": "https://github.com/SSvishnevsky/yii2-telegram-log/issues",
