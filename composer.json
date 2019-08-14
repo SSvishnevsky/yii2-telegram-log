@@ -10,6 +10,7 @@
       "url": "https://github.com/SSvishnevsky/yii2-telegram-log.git"
       }
     ],
+    "minimum-stability": "dev",
     "support": {
         "issues": "https://github.com/SSvishnevsky/yii2-telegram-log/issues",
         "source": "https://github.com/SSvishnevsky/yii2-telegram-log",
