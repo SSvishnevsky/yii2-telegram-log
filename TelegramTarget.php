@@ -1,5 +1,5 @@
 <?php
-namespace airani\log;
+namespace SSvishnevsky\log;
 
 use yii\log\Target;
 use yii\base\InvalidConfigException;
@@ -13,7 +13,7 @@ use yii\base\InvalidConfigException;
  * 'log' => [
  *     'targets' => [
  *         [
- *             'class' => 'airani\log\TelegramTarget',
+ *             'class' => 'SSvishnevsky\log\TelegramTarget',
  *             'levels' => ['error'],
  *             'botToken' => '123456:abcde', // bot token secret key
  *             'chatId' => '123456', // chat id or channel username with @ like 12345 or @channel
@@ -68,7 +68,7 @@ class TelegramTarget extends Target
         if(!empty($this->baseUrl)){
             $config['baseUrl'] = $this->baseUrl;
         }
-        
+
         $bot = new TelegramBot($config);
 
         $messages = array_map([$this, 'formatMessage'], $this->messages);

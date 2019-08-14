@@ -15,7 +15,7 @@ php composer.phar require -vv --prefer-dist SSvishnevsky/yii2-telegram-log
 or add below line to the require section of composer.json file and then run `php composer.phar update -vv --prefer-dist --profile`
 
 ```
-"airani/yii2-telegram-log": "*"
+"SSvishnevsky/yii2-telegram-log": "*"
 ```
 
 ## How To Use ##
@@ -25,7 +25,7 @@ or add below line to the require section of composer.json file and then run `php
 'log' => [
     'targets' => [
         [
-            'class' => 'airani\log\TelegramTarget',
+            'class' => 'SSvishnevsky\log\TelegramTarget',
             'levels' => ['error'],
             'botToken' => '123456:abcde', // bot token secret key
             'chatId' => '123456', // chat id or channel username with @ like 12345 or @channel

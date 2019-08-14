@@ -1,5 +1,5 @@
 <?php
-namespace airani\log;
+namespace SSvishnevsky\log;
 
 use yii\base\Component;
 use yii\base\InvalidConfigException;
